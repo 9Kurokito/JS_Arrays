@@ -18,3 +18,16 @@ function task2(){
     newArr = arr.filter(getElem).reduce((sum, elem) => sum + elem, 0);
     console.log(newArr);
 }
+
+function task3(){
+    function isNumberEven(arr){
+        return arr.every(elem => elem % 2 == 0);
+    }
+    arrMain = [1, 234, 342, 223, 22, 5, 17];
+    if (isNumberEven(arrMain)){
+        console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+}
